@@ -1,5 +1,7 @@
 # Terms And Conditions Checkbox (SilverStripe)
 
+Author: George Botley - www.botley.me.uk
+
 ## Background
 
 A recent project of mine required a checkbox which could link out to an on-site terms and conditions / privacy policy page. This didn't call for downloading any complex modules and could be achieved by extending the pre-existing CheckboxField class. I have shared the one-file solution here in this repo for others to use in their own projects down the line. Hope it helps.
