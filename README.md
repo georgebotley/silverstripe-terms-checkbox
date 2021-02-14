@@ -1,7 +1,7 @@
 # SilverStripe Terms and Conditions Checkbox
 
-Author: George Botley 
-Url:    www.botley.me.uk
+- Author: George Botley 
+- Url: www.botley.me.uk
 
 ## Background
 
