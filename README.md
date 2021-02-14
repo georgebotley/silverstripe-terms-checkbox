@@ -16,7 +16,7 @@ SilverStripe 4
 Composer is not required for this as I haven't built this as a module given it's only one field type. 
 
 1. Download a copy of this repository.
-2. Upload the `TermsAndConditionsCheckbox.php` into your SilverStripe installs `app/src` directory. 
+2. Upload the `TermsAndConditionsCheckboxField.php` into your SilverStripe installs `app/src` directory. 
 3. You may need to run `/dev/build` to get SilverStripe to pick up on the new class.
 
 ## Configurable Items
@@ -33,7 +33,7 @@ This checkbox field has a few configurable items.
 ## Example Usage
 
 ```
-TermsAndConditionsCheckbox::create('Terms') // the field title is Terms
+TermsAndConditionsCheckboxField::create('Terms') // the field title is Terms
     ->setTermsPage('privacy-policy') // will link to /privacy-policy
     ->setPreLinkText('I have read and accept the terms of the') // this will appear before the link
     ->setLinkText('privacy policy'); // this is the text which will be clickable
