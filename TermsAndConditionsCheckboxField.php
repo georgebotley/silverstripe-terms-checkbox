@@ -2,7 +2,32 @@
 
 use SilverStripe\ORM\FieldType\DBField;
 
-class TermsAndConditionsCheckbox extends SilverStripe\Forms\CheckboxField {
+/**
+ * An extension of the SilverStripe CheckboxField to allow the use of an
+ * anchor within the field label. This label will link out to the terms and
+ * conditions page or privacy policy as appropriate although could in theory
+ * link anywhere within the site (based on URLSegment).
+ *
+ * Using this field can be as simple as:
+ *
+ * TermsAndConditionsCheckboxField::create(FieldName)
+ *
+ * Out of the box that wont link to any page but will show a tick box with the
+ * label 'I have read and accept the terms and conditions'. To customise this
+ * further you can do this:
+ *
+ * TermsAndConditionsCheckboxField::create('Terms')
+ *  ->setTermsPage('privacy-policy')
+ *  ->setPreLinkText('I have read and accept the terms of the')
+ *  ->setLinkText('privacy policy')
+ *
+ * This will change the label to read 'I have read and accept the terms of the
+ * privacy policy' with the text 'privacy policy' linking out to the page with
+ * a URLSegment of 'privacy-policy'.
+ *
+ * @author George Botley - botley.me.uk
+ */
+class TermsAndConditionsCheckboxField extends SilverStripe\Forms\CheckboxField {
 
     /**
      * The text displayed before the link to the terms and conditions page.
